@@ -1,0 +1,95 @@
+﻿<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="css/form.css"/>
+	<script language="javascript" src="javascript/scripts.js"></script>
+	<title>Site de celulares motorola</title>
+</head>
+<body onload="slider()">
+
+	<header id="cab">
+		<a href="admin.html"><img src="imagens/LogoMotorola.jpg" width="150px" height="150px"></a>
+		<div id="social">
+			<a href="http://facebook.com/" target="_blank"><img src="imagens/facebook.png"></a>
+			<a href="http://twitter.com/" target="_blank"><img src="imagens/twitter.png"></a>
+		</div>
+		<nav id="menu">
+			<ul>
+				<li><a href="index.html" target="_self">Home</a></li>
+				<li><a href="produtos.html" target="_self">Produtos</a></li>
+				<li><a href="contato.html" target="_self">Contato</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<br class="fixFloat">
+	
+	<section id="corpo-full">
+<article id="noticia-principal">
+<header id="cabecalho-artigo">
+<hgroup>
+	<br /><br /><br /><h1>Formulário de Contato</h1>
+</hgroup>	
+</header>
+	<form method="post" id="fContato" action="mailto:ranapug@gmail.com">
+		<fieldset id="usuario"><legend>
+			Identificação do Usuário</legend>
+			<p><label id="cNome">Nome:</label> <input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder
+			="Nome Completo"/></p>
+			<p>Senha: <input type="password" name="tSenha" id="cSenha" size="8" maxlength="8" placeholder
+			="8 Digitos"/></p>
+			<p>E-mail: <input type="email" name="tEmail" id="cEmail" size="20" maxlength="40" placeholder
+			="exemplo@mail.com"/></p>
+			<fieldset id="sexo"><legend>Sexo</legend>
+			<input type="radio" name="tSexo" id="cMasc" size="20" maxlength="30" placeholder
+			="Nome Completo"checked /><label for="cMasc">Masculino</label><br/> 
+			<input type="radio" name="tSexo" id="cFem" size="20" maxlength="30" placeholder
+			="Nome Completo"/><label for="cFem">Feminino</label>
+			</fieldset>
+			<p>Data de Nascimento:<input type="date" name="tNasc" id="cNasc"/></p>
+		</fieldset>
+	
+		<fieldset id="endereco">
+			<legend>Endereço do Usuário</legend>
+			<p>Logradouro:<input type="text" name="tRua" id="cRua" size="13" maxlength="80" placeholder="Rua, Av, Trav ..."/></p>
+			<p>Número:<input type="number" name="tNum" id="cNum" min="0" max="99999" placeholder="99999"/></p>
+			<p><label for="cEst">Estado:</label><select name="tEst" id="cEst">
+			<optgroup label="Região Sudeste">
+				<option value="RJ">Rio de Janeiro</option>
+				<option value="SP" select>São Paulo</option>
+				<option value="MG">Minas Gerais</option>
+</optgroup>
+<optgroup label="Região Sul">
+				<option value="PR">Paraná</option>
+				<option value="SC">Santa Catarina</option>
+				<option value="RS">Rio Grande do Sul</option>
+</optgroup>
+			</select></p>
+			<p><label for="cCid">Cidade:</label><input type="text" name="tCid" id="cCid" maxlength="40" size="20" placeholder="Sua cidade"  list="cidades"/></p>
+			<datalist id="cidades">
+				<option value="Rio de Janeiro"></option>
+				<option value="Nova Iguaçu"></option>
+	<option value="Niterói"></option>
+	<option value="Belford Roxo"></option>
+			</datalist>
+		</fieldset>
+		
+		<fieldset id="mensagem">
+		<legend>Mensagem do Usuário</legend>
+			<p><label for="cUrg">Grau de Urgência:</label> Min<input type="range" name="tUrg" id="cUrg" min="0" max="10" step="2" />Máx</p>
+			<p><label for="cMsg">Mensagem:</label><textarea name="tMsg" id="cMsg" cols="30" rows="5" placeholder="Deixe aqui sua mensagem"></textarea></p>
+		</fieldset>
+
+<input type="image" src="imagens/botao-enviar.png" />
+	</form>
+</article>
+</section>
+
+<footer id="rodape">
+<p>Copyright &copy; 2023  - by Rana Landim</p>
+</footer>
+</div>
+</body>
+</html>

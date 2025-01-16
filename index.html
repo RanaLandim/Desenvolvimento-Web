@@ -1,136 +1,96 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!DOCTYPE HTML>
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aplicativo de Ginástica Laboral</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-        }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 1rem;
-            text-align: center;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #333;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 1rem;
-            margin: 0 0.5rem;
-        }
-        nav a:hover {
-            background-color: #4CAF50;
-        }
-        section {
-            padding: 2rem;
-            background-color: white;
-            margin: 1rem auto;
-            max-width: 800px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-            margin-top: 1rem;
-        }
-        img {
-            display: block;
-            max-width: 100%;
-            height: auto;
-            margin: 1rem 0;
-        }
-        label, input, textarea, button {
-            display: block;
-            margin: 0.5rem 0;
-            width: 100%;
-        }
-        input, textarea, button {
-            padding: 0.5rem;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        button {
-            background-color: #4CAF50;
-            color: white;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #45a049;
-        }
-    </style>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/estilos.css">
+	<script language="javascript" src="javascript/scripts.js"></script>
+	<title>Site de celulares motorola</title>
 </head>
-<body>
+<body onload="slider()">
 
-<header>
-    <h1>Aplicativo de Ginástica Laboral</h1>
+	<header id="cab">
+		<a href="admin.html"><img src="imagens/LogoMotorola.jpg" width="150px" height="150px"></a>
+		<div id="social">
+			<a href="http://facebook.com/" target="_blank"><img src="imagens/facebook.png"></a>
+			<a href="http://twitter.com/" target="_blank"><img src="imagens/twitter.png"></a>
+		</div>
+		<nav id="menu">
+			<ul>
+				<li><a href="index.html" target="_self">Home</a></li>
+				<li><a href="produtos.html" target="_self">Produtos</a></li>
+				<li><a href="contato.html" target="_self">Contato</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<br class="fixFloat">
+	
+	<section id="banner">
+		<div id="slider">
+			<img id="b1" src="imagens/banner1.jpg">
+			<img id="b2" src="imagens/banner2.jpg">
+			<img id="b3" src="imagens/banner3.png">
+			<img id="b4" src="imagens/banner4.jpg">
+		</div>
+	</section>
+<section id="corpo">
+
+<article id="noticia-principal">
+	<header id="cabecalho-artigo">
+<hgroup>
+	<h1>Sobre Motorola</h1>
+</hgroup>	
 </header>
 
-<nav>
-    <a href="#sobre">Sobre</a>
-    <a href="#exercicios">Exercícios</a>
-    <a href="#cadastro">Cadastro de Exercícios</a>
-</nav>
+<p>A Moto leva em seu DNA a busca constante por inovação na comunicação móvel. Inventamos quase todas as tecnologias que possibilitaram tirar o sonho da mobilidade do papel, como o primeiro telefone celular, a primeira estação de radio e tantas outras iniciativas desse segmento.</p>
 
-<section id="sobre">
-    <h2>Sobre o Aplicativo</h2>
-    <p>
-        Este aplicativo foi desenvolvido para promover a saúde e o bem-estar no ambiente de trabalho, 
-        oferecendo exercícios de ginástica laboral que ajudam a reduzir dores, prevenir lesões e aumentar a produtividade. 
-        Com uma interface simples e prática, os trabalhadores podem realizar exercícios diretamente no local de trabalho.
-    </p>
+<p>Hoje, combinamos esse espírito pioneiro com um compromisso real com os consumidores. Pensando assim, para oferecer a melhor experiência em nossos produtos trabalhamos com o sistema operacional mais popular do mundo! O Android foi o responsável por aproximar a Internet do mundo móvel. É por isso também que nós levamos a todos os nossos consumidores uma experiência completa sem abrir mão da qualidade ou do estilo.</p>
+
+<p>Nos últimos 80 anos, nosso time de engenheiros alcançaram sucesso nas inovações tecnológicas e em encontrar novas maneiras de facilitar nossas vidas através delas. Nosso maior compromisso é buscar oportunidades de mudar a vida das pessoas para melhor, por meio do mundo mobile.</p>
+
+<h2>Nossa Missão</h2>
+<p>"Prestar serviços de telecomunicações, informações e entretenimento, com soluções inovadoras, competitivas, globais e com qualidade, que satisfaçam às necessidades dos clientes, buscando sempre maximizar resultados para os acionistas, colaboradores e sociedade, garantindo o desenvolvimento sustentado da empresa." </p>
+
+<h2>Nossa Visão</h2>
+<p>"Ser reconhecida, pelos clientes e pela sociedade, como a melhor e mais completa prestadora dos serviços objeto de sua missão e pela sua conduta ética e socialmente responsável." </p>
+
+<h2>Nossos Valores</h2>
+<p>"Nossa razão de existir é maior do que a prestação de serviços de telecomunicações. É a busca da excelência e da inovação." </p>
+
+<p>"Estimulamos a insatisfação com o hoje, de forma a buscar permanentemente a satisfação do cliente e, consequentemente, o crescimento e a liderança no mercado." </p>
+
+<p>"Acreditamos que a aprendizagem contínua e a abertura ao novo são ferramentas fundamentais para o crescimento em um mundo que se transforma a cada dia." </p>
+
+<video id="filmes" controls="controls">
+			<source src="videos/v1.mp4" width="221px" height="358px" type="video/mp4"/>
+			Desculpe, mas não foi possivel carregar o audio.
+		</video>
+</article>
 </section>
 
-<section id="exercicios">
-    <h2>Exercícios de Ginástica Laboral</h2>
-    <h3>1. Alongamento de Pescoço</h3>
-    <img src="https://lh4.googleusercontent.com/wBBaOlY3MU1Ubc50vWpF2S8BfsYpPe38zA_d2zPcn8PjUrMXSXHEEl6jKf58hLDH0f23kbf8hdEms6p3oKjcT_CBtHh_3htrd6GuLTYbE3ZFlV9dKV6ZYeQ7KPvu6iwDkVmOrsAs" alt="Alongamento de pescoço">
-    <p>
-        Incline a cabeça para o lado, como se estivesse tentando encostar a orelha no ombro. Mantenha por 15 segundos e alterne os lados.
-    </p>
-    <h3>2. Alongamento de Braços</h3>
-    <img src="https://www.hipertrofia.org/blog/wp-content/uploads/2019/10/alongamento-triceps.gif" alt="Alongamento de braços">
-    <p>
-        Estique um braço à frente, segurando o pulso com a outra mão. Puxe suavemente o braço em direção ao peito e segure por 20 segundos.
-    </p>
-    <h3>3. Rotação de Tronco</h3>
-    <img src="https://lh4.googleusercontent.com/wBBaOlY3MU1Ubc50vWpF2S8BfsYpPe38zA_d2zPcn8PjUrMXSXHEEl6jKf58hLDH0f23kbf8hdEms6p3oKjcT_CBtHh_3htrd6GuLTYbE3ZFlV9dKV6ZYeQ7KPvu6iwDkVmOrsAs" alt="Rotação de tronco">
-    <p>
-        Sentado, coloque as mãos na cintura e gire o tronco para a direita e para a esquerda, mantendo a postura ereta. Repita 10 vezes de cada lado.
-    </p>
-</section>
+<aside id="lateral">
+<h1>Outras Notícias</h1>
+<h2>Novidades da Motorola</h2>
 
-<section id="cadastro">
-    <h2>Cadastro de Novos Exercícios</h2>
-    <form>
-        <label for="nome">Nome do Exercício:</label>
-        <input type="text" id="nome" name="nome" placeholder="Ex: Alongamento de Ombros" required>
+<video id="lateral" controls="controls">
+			<source src="videos/v2.mp4" width="221px" height="358px" type="video/mp4" />
+			Desculpe, mas não foi possivel carregar o audio.
+		</video>
 
-        <label for="descricao">Descrição do Exercício:</label>
-        <textarea id="descricao" name="descricao" rows="4" placeholder="Descreva como realizar o exercício" required></textarea>
+<h2>Novidades Moto Mod</h2>
 
-        <label for="tempo">Tempo de Duração (em segundos):</label>
-        <input type="number" id="tempo" name="tempo" placeholder="Ex: 30" required>
+ <p>Motorola confirmou rumores e apresentou nesta quarta-feira (15) um novo módulo da família Moto Mod. E trata-se de um acessório bastante esperado: uma impressora em miniatura que transforma o smartphone em uma Polaroid moderna, transformando o seu clique em uma foto física na hora.</p>
 
-        <button type="submit">Cadastrar Exercício</button>
-    </form>
-</section>
+<p>Como o nome e o comercial abaixo sugerem, o acessório conectado na traseira do dispositivo imprime rapidamente não só as fotos que você acabou de tirar, mas também as que já estiverem em galerias de Facebook e Google Fotos, por exemplo. Ele não altera em nada a qualidade da câmera do smartphone, que precisa fazer parte da família Moto Z de aparelhos compatíveis com Moto Mods.</p>
+<p>O Mod usa o papel Polaroid Premium ZINK Zero-Ink, com formato de 2 x 3 polegadas e tecnologia antimanchas e borrados. Depois da impressão, você pode tirar o adesivo da traseira e colar as imagens em qualquer superfície.</p>
 
-<footer>
-    <p>&copy; 2024 Aplicativo de Ginástica Laboral. Todos os direitos reservados.</p>
+<p>A Polaroid Insta-Share Printer será lançada por US$ 200 (cerca de R$ 660 na cotação atual) e já está disponível para venda nos Estados Unidos pela operadora Verizon. O lançamento global e desbloqueado de operadoras acontecerá "nos próximos meses".</p>
+
+</aside>
+
+<footer id="rodape">
+<p>Copyright &copy; 2023  - by Rana Landim</p>
 </footer>
-
+</div>
 </body>
 </html>
